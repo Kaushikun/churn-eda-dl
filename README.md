@@ -9,18 +9,14 @@ Case study for the Data Exploration and Visualization course (CO3 / CO4 / CO5).
 electronic-check payment and lack of tech-support/security add-ons. A tuned MLP reaches test
 ROC-AUC 0.845, recall 0.70 and F1 0.63 (classical baselines: AUC 0.849-0.851).
 
-## Repository structure
+## Repository files
 
-```
-churn-eda-dl/
-├── README.md
-├── requirements.txt
-├── data/Telco-Customer-Churn.csv
-├── notebooks/churn\_eda\_dl.ipynb   # full executed notebook (EDA, visuals, model, evaluation)
-├── src/churn\_eda\_dl.py            # same code as a script
-├── figures/                       # all saved charts + interactive\_scatter.html
-└── report/Project\_Report.docx / .pdf
-```
+- README.md, requirements.txt
+- Telco-Customer-Churn.csv: dataset
+- churn_eda_dl.ipynb: executed notebook (EDA, visuals, model, evaluation)
+- churn_eda_dl.py: same code as a script
+- r1-r5 and v1-v13 .png files, interactive_scatter.html: all charts
+- Project_Report.pdf / .docx: project report
 
 ## What is covered
 
@@ -32,11 +28,7 @@ churn-eda-dl/
 
 ## How to run
 
-```bash
-pip install -r requirements.txt
-cd notebooks
-jupyter notebook churn\_eda\_dl.ipynb     # or: cd src \&\& python churn\_eda\_dl.py
-```
+Create folders `data/`, `notebooks/` and `figures/`, put the CSV in `data/` and the notebook in `notebooks/`, then run it.
 
 Random seed is fixed to 42, so the reported numbers are reproducible.
 
